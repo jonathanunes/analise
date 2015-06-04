@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150604205742) do
+ActiveRecord::Schema.define(version: 20150604211816) do
 
   create_table "eventos", force: :cascade do |t|
     t.string   "nome"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150604205742) do
     t.string   "alexa"
     t.integer  "flikes"
     t.integer  "ftalk"
+    t.string   "facebook"
   end
 
   create_table "medidas", force: :cascade do |t|
