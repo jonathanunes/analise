@@ -5,8 +5,9 @@ class Medida < ActiveRecord::Base
 
   def atualizar(evento)
     self.evento_id = evento.id
-    self.twitter = getTwitter(evento.twitter)
-    self.alexa = getAlexa(evento.alexa)
+    getTwitter(evento.twitter)
+    getAlexa(evento.alexa)
+    getFacebook(evento.facebook)
   end
 
 
@@ -17,19 +18,27 @@ class Medida < ActiveRecord::Base
     source = open("https://twitter.com/#{twitter}").read
     a = source.split('<a class="ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor" title="')
     a = source.split('class="ProfileNav-item ProfileNav-item--followers"')
-    c = a[1].split('title')[1].split(' ')[0].gsub!('=','').gsub!('"','').to_f
+    self.twitter = a[1].split('title')[1].split(' ')[0].gsub!('=','').gsub!('"','').to_f
+
   end
 
   def getAlexa(url)
     source = open("http://www.alexa.com/siteinfo/#{url}").read
-    a = source.split('metrics-data align-vmiddle')[1].split('>')[2].split('<')[0].gsub!(',','.').gsub!("\n",'').gsub!(' ','')
+    self.alexa = source.split('metrics-data align-vmiddle')[1].split('>')[2].split('<')[0].gsub!(',','.').gsub!("\n",'').gsub!(' ','')
   end
 
-  def getFacebookLikes(facebook)
-
+  def getFacebook(facebook)
+    source = open("https://graph.facebook.com/#{facebook}/").read
+    code = JSON.parse(source)
+    getFacebookLikes(code)
+    getFacebookTalk(code)
   end
 
-  def getFacebookTalk(facebook)
+  def getFacebookLikes(code)
+    self.flikes = code['likes']
+  end
 
+  def getFacebookTalk(code)
+    self.ftalk = code['talking_about_count']
   end
 end
