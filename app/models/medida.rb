@@ -13,8 +13,6 @@ class Medida < ActiveRecord::Base
 
   private
 
-
-
   def getTwitter(twitter)
     source = open("https://twitter.com/#{twitter}").read
     a = source.split('<a class="ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor" title="')
@@ -27,4 +25,11 @@ class Medida < ActiveRecord::Base
     a = source.split('metrics-data align-vmiddle')[1].split('>')[2].split('<')[0].gsub!(',','.').gsub!("\n",'').gsub!(' ','')
   end
 
+  def getFacebookLikes(facebook)
+
+  end
+
+  def getFacebookTalk(facebook)
+
+  end
 end

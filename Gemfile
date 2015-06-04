@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.2.1'
 
+gem "json"
 gem "responders"
 gem 'pry'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
