@@ -10,6 +10,13 @@ class EventosController < ApplicationController
   # GET /eventos/1
   # GET /eventos/1.json
   def show
+    @eventos = Evento.all
+      @id = []
+    @eventos.each do |evento|
+      @id << evento.id
+    end
+    @medidas = Medida.where(evento_id: @id)
+    # @medidas = Medida.where(:evento_id => @evento.id).all
   end
 
   # GET /eventos/new
