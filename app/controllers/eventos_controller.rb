@@ -5,13 +5,13 @@ class EventosController < ApplicationController
   # GET /eventos.json
   def index
     @eventos = Evento.all
+
     # @eventos = Evento.all
-    #   @id = []
-    # @eventos.each do |evento|
-    #   @id << evento.id
-    # end
-    # @medidas = Medida.where(evento_id: @id)
-  end
+    @medidas = []
+    @eventos.each do |evento|
+      @medidas << Medida.where(evento_id: evento.id).last
+    end
+end
 
   # GET /eventos/1
   # GET /eventos/1.json
