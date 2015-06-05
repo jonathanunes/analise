@@ -24,12 +24,12 @@ ActiveRecord::Schema.define(version: 20150605100044) do
 
   create_table "medidas", force: :cascade do |t|
     t.integer  "evento_id"
-    t.integer  "twitter"
+    t.integer  "twitter" , :default => 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "alexa"
-    t.integer  "flikes"
-    t.integer  "ftalk"
+    t.string   "alexa" , :default => 0
+    t.integer  "flikes" , :default => 0
+    t.integer  "ftalk" , :default => 0
   end
 
   add_index "medidas", ["evento_id"], name: "index_medidas_on_evento_id"
