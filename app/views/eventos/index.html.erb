@@ -1,32 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Eventos</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Nome</th>
-      <th>Twitter</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @eventos.each do |evento| %>
-      <tr>
-        <td><%= evento.nome %></td>
-        <td><%= evento.twitter %></td>
-        <td><%= link_to 'Show', evento %></td>
-        <td><%= link_to 'Edit', edit_evento_path(evento) %></td>
-        <td><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Evento', new_evento_path %>
 <div class="row">
   <div class="col-md-3">
     <div class="row">
@@ -40,8 +13,6 @@
     </div>
     <div id="facebook-talks" style="height: 250px;"></div>
   </div>
-</div>
-<div class="row">
   <div class="col-md-3">
     <div class="row">
       <center><h4>Alexa</h4></center>
@@ -56,7 +27,20 @@
   </div>
 </div>
 
-<div id="donut-example" style="height: 250px;"></div>
+<div class="row">
+  <% @eventos.each do |evento| %>
+      <div class="col-lg-3">
+        <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+        <h2><%= link_to evento.nome, evento %></h2>
+        <p><%= link_to 'Edit', edit_evento_path(evento) %><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+
+  <% end %>
+</div>
+
+
+
+
 
 <script>
     new Morris.Donut({
