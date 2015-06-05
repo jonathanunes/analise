@@ -50,6 +50,6 @@ class Medida < ActiveRecord::Base
   end
 
   def getFacebookTalk(code)
-    self.ftalk = code['talking_about_count']
+    self.ftalk = code['talking_about_count'].to_i
   end
 end

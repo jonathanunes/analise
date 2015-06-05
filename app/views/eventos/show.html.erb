@@ -1,38 +1,50 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @evento.nome %>
-</p>
-
-<p>
-  <strong>Twitter:</strong>
-  <%= @evento.twitter %>
-</p>
-<p>
-  <strong>Alexa:</strong>
-  <%= @evento.alexa %>
-</p>
-<p>
-  <strong>Facebook:</strong>
-  <%= @evento.facebook %>
-</p>
-<%= link_to 'Edit', edit_evento_path(@evento) %> |
-<%= link_to 'Back', eventos_path %>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+    <center><h1><%= @evento.nome %></h1>(<%= link_to 'Editar', edit_evento_path(@evento) %>)</center>
+    </div>
+</div>
 
 
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <center><h4>Facebook Likes</h4></center>
+    </div>
+    <div id="facebook-likes" style="height: 250px;"></div>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <center><h4>Facebook Talks</h4></center>
+    </div>
+    <div id="facebook-talk-about" style="height: 250px;"></div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <center><h4>Alexa</h4></center>
+    </div>
+    <div id="alexa" style="height: 250px;"></div>
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+      <center><h4>Twitter</h4></center>
+    </div>
+    <div id="twitter" style="height: 250px;"></div>
+  </div>
+</div>
 
-<div id="myfirstchart" style="height: 250px;"></div>
 
 <script>
-    new Morris.Bar({
+    new Morris.Line({
         // ID of the element in which to draw the chart.
-        element: 'myfirstchart',
+        element: 'facebook-likes',
         // Chart data records -- each entry in this array corresponds to a point on
         // the chart.
         data: [
             <% @medidas.each do |medida| %>
-            { date: <%= medida.id %>, value: <%= medida.flikes %> },
+            { date: '<%= medida.id %>', value: '<%= medida.flikes %>' },
             <% end %>
         ],
         // The name of the data record attribute that contains x-values.
@@ -41,6 +53,41 @@
         ykeys: ['value'],
         // Labels for the ykeys -- will be displayed when you hover over the
         // chart.
-        labels: ['Value']
+        labels: ['Facebook Likes']
     });
+    new Morris.Line({
+        element: 'facebook-talk-about',
+        data: [
+            <% @medidas.each do |medida| %>
+            { y: '<%= medida.id %>', a: '<%= medida.ftalk %>' },
+            <% end %>
+        ],
+        xkey: 'y',
+        ykeys: ['a'],
+        labels: ['Facebook Talks']
+    });
+    new Morris.Line({
+        element: 'twitter',
+        data: [
+            <% @medidas.each do |medida| %>
+            { y: '<%= medida.id %>', a: '<%= medida.twitter %>' },
+            <% end %>
+        ],
+        xkey: 'y',
+        ykeys: ['a'],
+        labels: ['Twitter']
+    });
+    new Morris.Line({
+        element: 'alexa',
+        data: [
+            <% @medidas.each do |medida| %>
+            { y: '<%= medida.id %>', a: '<%= medida.alexa %>' },
+            <% end %>
+        ],
+        xkey: 'y',
+        ykeys: ['a'],
+        labels: ['Alexa']
+    });
+
 </script>
+
