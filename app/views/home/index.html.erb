@@ -1,0 +1,66 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="row">
+      <center><h4>Facebook Likes</h4></center>
+    </div>
+    <div id="facebook-likes" style="height: 250px;"></div>
+  </div>
+  <div class="col-md-3">
+    <div class="row">
+      <center><h4>Facebook Talks</h4></center>
+    </div>
+    <div id="facebook-talks" style="height: 250px;"></div>
+  </div>
+  <div class="col-md-3">
+    <div class="row">
+      <center><h4>Alexa</h4></center>
+    </div>
+    <div id="alexa" style="height: 250px;"></div>
+  </div>
+  <div class="col-md-3">
+    <div class="row">
+      <center><h4>Twitter</h4></center>
+    </div>
+    <div id="twitter" style="height: 250px;"></div>
+  </div>
+</div>
+
+
+
+
+<script>
+    new Morris.Donut({
+        element: 'facebook-likes',
+        data: [
+            <% @medidas.each do |medida| %>
+            { label: "<%= medida.evento.nome %>", value: '<%= medida.flikes %>' },
+            <% end %>
+        ]
+    });
+    new Morris.Donut({
+        element: 'facebook-talks',
+        data: [
+            <% @medidas.each do |medida| %>
+            { label: "<%= medida.evento.nome %>", value: '<%= medida.ftalk %>' },
+            <% end %>
+        ]
+    });
+    new Morris.Donut({
+        element: 'twitter',
+        data: [
+            <% @medidas.each do |medida| %>
+            { label: "<%= medida.evento.nome %>", value: '<%= medida.twitter %>' },
+            <% end %>
+        ]
+    });
+    new Morris.Donut({
+        element: 'alexa',
+        data: [
+            <% @medidas.each do |medida| %>
+            { label: "<%= medida.evento.nome %>", value: '<%= medida.alexa %>' },
+            <% end %>
+        ]
+    });
+</script>

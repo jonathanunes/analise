@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150605100044) do
+ActiveRecord::Schema.define(version: 20150605144906) do
 
   create_table "eventos", force: :cascade do |t|
     t.string   "nome"
@@ -24,12 +24,12 @@ ActiveRecord::Schema.define(version: 20150605100044) do
 
   create_table "medidas", force: :cascade do |t|
     t.integer  "evento_id"
-    t.integer  "twitter"
+    t.float    "twitter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "alexa"
-    t.integer  "flikes"
-    t.integer  "ftalk"
+    t.float    "flikes"
+    t.float    "ftalk"
   end
 
   add_index "medidas", ["evento_id"], name: "index_medidas_on_evento_id"

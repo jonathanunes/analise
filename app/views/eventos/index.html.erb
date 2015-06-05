@@ -1,78 +1,15 @@
 <p id="notice"><%= notice %></p>
 
 <div class="row">
-  <div class="col-md-3">
-    <div class="row">
-      <center><h4>Facebook Likes</h4></center>
-    </div>
-    <div id="facebook-likes" style="height: 250px;"></div>
-  </div>
-  <div class="col-md-3">
-    <div class="row">
-      <center><h4>Facebook Talks</h4></center>
-    </div>
-    <div id="facebook-talks" style="height: 250px;"></div>
-  </div>
-  <div class="col-md-3">
-    <div class="row">
-      <center><h4>Alexa</h4></center>
-    </div>
-    <div id="alexa" style="height: 250px;"></div>
-  </div>
-  <div class="col-md-3">
-    <div class="row">
-      <center><h4>Twitter</h4></center>
-    </div>
-    <div id="twitter" style="height: 250px;"></div>
-  </div>
-</div>
-
-<div class="row">
   <% @eventos.each do |evento| %>
       <div class="col-lg-3">
+        <center>
         <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
         <h2><%= link_to evento.nome, evento %></h2>
-        <p><%= link_to 'Edit', edit_evento_path(evento) %><%= link_to 'Destroy', evento, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        </center>
       </div>
 
   <% end %>
 </div>
 
 
-
-
-
-<script>
-    new Morris.Donut({
-        element: 'facebook-likes',
-        data: [
-            <% @medidas.each do |medida| %>
-            { label: "<%= medida.evento.nome %>", value: '<%= medida.flikes %>' },
-            <% end %>
-        ]
-    });
-    new Morris.Donut({
-        element: 'facebook-talks',
-        data: [
-            <% @medidas.each do |medida| %>
-            { label: "<%= medida.evento.nome %>", value: '<%= medida.ftalk %>' },
-            <% end %>
-        ]
-    });
-    new Morris.Donut({
-        element: 'twitter',
-        data: [
-            <% @medidas.each do |medida| %>
-            { label: "<%= medida.evento.nome %>", value: '<%= medida.twitter %>' },
-            <% end %>
-        ]
-    });
-    new Morris.Donut({
-        element: 'alexa',
-        data: [
-            <% @medidas.each do |medida| %>
-            { label: "<%= medida.evento.nome %>", value: '<%= medida.alexa %>' },
-            <% end %>
-        ]
-    });
-</script>
