@@ -8,9 +8,4 @@ RSpec.describe "eventos/show", type: :view do
     ))
   end
 
-  it "renders attributes in <p>" do
-    render
-    expect(rendered).to match(/Nome/)
-    expect(rendered).to match(/Twitter/)
-  end
 end

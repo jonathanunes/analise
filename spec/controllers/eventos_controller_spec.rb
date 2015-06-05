@@ -24,11 +24,11 @@ RSpec.describe EventosController, type: :controller do
   # Evento. As you add validations to Evento, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
+    {nome: 'Brasil Game Show', twitter: 'brasilgameshow', facebook: 'BrasilGameShow', alexa: 'brasilgameshow.com.br'}
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
+    {nome: nil, twitter: 'brasilgameshow', facebook: 'BrasilGameShow', alexa: 'brasilgameshow.com.br'}
   }
 
   # This should return the minimal set of values that should be in the session

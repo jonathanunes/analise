@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.0/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.0/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.0/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.0/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-05T06:48:25-03:00">2015-06-05T06:48:25-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-05T06:57:31-03:00">2015-06-05T06:57:31-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">72.22%</span></span>
+    (<span class="covered_percent"><span class="yellow">89.1%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.76
+       <span class="green">
+         1.26
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>32</b> files in total.
-    <b>270</b> relevant lines. 
-    <span class="green"><b>195</b> lines covered</span> and
-    <span class="red"><b>75</b> lines missed </span>
+    <b>266</b> relevant lines. 
+    <span class="green"><b>237</b> lines covered</span> and
+    <span class="red"><b>29</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#72d5cc7976f4936833ce54070f40592f4ff4718e" class="src_link" title="app/controllers/eventos_controller.rb">app/controllers/eventos_controller.rb</a></td>
-        <td class="red strong">33.33 %</td>
+        <td class="red strong">77.78 %</td>
         <td>91</td>
         <td>45</td>
-        <td>15</td>
-        <td>30</td>
-        <td>0.3</td>
+        <td>35</td>
+        <td>10</td>
+        <td>2.2</td>
       </tr>
       
       <tr>
@@ -242,12 +242,12 @@
       
       <tr>
         <td class="strong"><a href="#0023bcb7609cdc0f02b13cc2d6642fb4a72c2cfc" class="src_link" title="spec/controllers/eventos_controller_spec.rb">spec/controllers/eventos_controller_spec.rb</a></td>
-        <td class="red strong">66.25 %</td>
+        <td class="green strong">97.5 %</td>
         <td>159</td>
         <td>80</td>
-        <td>53</td>
-        <td>27</td>
-        <td>0.8</td>
+        <td>78</td>
+        <td>2</td>
+        <td>1.4</td>
       </tr>
       
       <tr>
@@ -363,10 +363,10 @@
       <tr>
         <td class="strong"><a href="#4ae71472d938392dcbbca1fc0fb00fc3e4bc6917" class="src_link" title="spec/views/eventos/show.html.erb_spec.rb">spec/views/eventos/show.html.erb_spec.rb</a></td>
         <td class="red strong">75.0 %</td>
-        <td>16</td>
-        <td>8</td>
-        <td>6</td>
-        <td>2</td>
+        <td>11</td>
+        <td>4</td>
+        <td>3</td>
+        <td>1</td>
         <td>0.8</td>
       </tr>
       
@@ -437,11 +437,11 @@
         <div class="source_table" id="72d5cc7976f4936833ce54070f40592f4ff4718e">
   <div class="header">
     <h3>app/controllers/eventos_controller.rb</h3>
-    <h4><span class="red">33.33 %</span> covered</h4>
+    <h4><span class="red">77.78 %</span> covered</h4>
     <div>
       <b>45</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
-      <span class="red"><b>30</b> lines missed.</span>
+      <span class="green"><b>35</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
     </div>
   </div>
   
@@ -484,8 +484,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
           
           <code class="ruby">    @eventos = Evento.all</code>
         </li>
@@ -520,26 +520,26 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
           <code class="ruby">    @eventos = Evento.all</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
           <code class="ruby">      @id = []</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
           
           <code class="ruby">    @eventos.each do |evento|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">      @id &lt;&lt; evento.id</code>
         </li>
@@ -550,8 +550,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="18">
-          
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
           
           <code class="ruby">    @medidas = Medida.where(evento_id: @id)</code>
         </li>
@@ -706,8 +706,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="5" data-linenumber="44">
+          <span class="hits">5</span>
           
           <code class="ruby">    @evento = Evento.new(evento_params)</code>
         </li>
@@ -718,26 +718,26 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="46">
-          
+        <li class="covered" data-hits="5" data-linenumber="46">
+          <span class="hits">5</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
-          
+        <li class="covered" data-hits="5" data-linenumber="47">
+          <span class="hits">5</span>
           
           <code class="ruby">      if @evento.save</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="10" data-linenumber="48">
+          <span class="hits">10</span>
           
           <code class="ruby">        format.html { redirect_to @evento, notice: &#39;Evento was successfully created.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
-          
+        <li class="covered" data-hits="5" data-linenumber="49">
+          <span class="hits">5</span>
           
           <code class="ruby">        format.json { render :show, status: :created, location: @evento }</code>
         </li>
@@ -802,26 +802,26 @@
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="60">
-          
+        <li class="covered" data-hits="4" data-linenumber="60">
+          <span class="hits">4</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="61">
-          
+        <li class="covered" data-hits="4" data-linenumber="61">
+          <span class="hits">4</span>
           
           <code class="ruby">      if @evento.update(evento_params)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="62">
-          
+        <li class="covered" data-hits="8" data-linenumber="62">
+          <span class="hits">8</span>
           
           <code class="ruby">        format.html { redirect_to @evento, notice: &#39;Evento was successfully updated.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="63">
-          
+        <li class="covered" data-hits="4" data-linenumber="63">
+          <span class="hits">4</span>
           
           <code class="ruby">        format.json { render :show, status: :ok, location: @evento }</code>
         </li>
@@ -886,26 +886,26 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="74">
-          
+        <li class="covered" data-hits="2" data-linenumber="74">
+          <span class="hits">2</span>
           
           <code class="ruby">    @evento.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="75">
-          
+        <li class="covered" data-hits="2" data-linenumber="75">
+          <span class="hits">2</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="76">
-          
+        <li class="covered" data-hits="4" data-linenumber="76">
+          <span class="hits">4</span>
           
           <code class="ruby">      format.html { redirect_to eventos_url, notice: &#39;Evento was successfully destroyed.&#39; }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="77">
-          
+        <li class="covered" data-hits="2" data-linenumber="77">
+          <span class="hits">2</span>
           
           <code class="ruby">      format.json { head :no_content }</code>
         </li>
@@ -946,8 +946,8 @@
           <code class="ruby">    def set_evento</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="84">
-          
+        <li class="covered" data-hits="8" data-linenumber="84">
+          <span class="hits">8</span>
           
           <code class="ruby">      @evento = Evento.find(params[:id])</code>
         </li>
@@ -976,8 +976,8 @@
           <code class="ruby">    def evento_params</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="89">
-          
+        <li class="covered" data-hits="9" data-linenumber="89">
+          <span class="hits">9</span>
           
           <code class="ruby">      params.require(:evento).permit(:nome, :twitter, :alexa, :facebook)</code>
         </li>
@@ -2789,11 +2789,11 @@
         <div class="source_table" id="0023bcb7609cdc0f02b13cc2d6642fb4a72c2cfc">
   <div class="header">
     <h3>spec/controllers/eventos_controller_spec.rb</h3>
-    <h4><span class="red">66.25 %</span> covered</h4>
+    <h4><span class="green">97.5 %</span> covered</h4>
     <div>
       <b>80</b> relevant lines. 
-      <span class="green"><b>53</b> lines covered</span> and
-      <span class="red"><b>27</b> lines missed.</span>
+      <span class="green"><b>78</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -2959,7 +2959,7 @@
         <li class="covered" data-hits="13" data-linenumber="27">
           <span class="hits">13</span>
           
-          <code class="ruby">    skip(&quot;Add a hash of attributes valid for your model&quot;)</code>
+          <code class="ruby">    {nome: &#39;Brasil Game Show&#39;, twitter: &#39;brasilgameshow&#39;, facebook: &#39;BrasilGameShow&#39;, alexa: &#39;brasilgameshow.com.br&#39;}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
@@ -2980,10 +2980,10 @@
           <code class="ruby">  let(:invalid_attributes) {</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="31">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="31">
+          <span class="hits">4</span>
           
-          <code class="ruby">    skip(&quot;Add a hash of attributes invalid for your model&quot;)</code>
+          <code class="ruby">    {nome: nil, twitter: &#39;brasilgameshow&#39;, facebook: &#39;BrasilGameShow&#39;, alexa: &#39;brasilgameshow.com.br&#39;}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
@@ -3016,8 +3016,8 @@
           <code class="ruby">  # EventosController. Be sure to keep this updated too.</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="37">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="16" data-linenumber="37">
+          <span class="hits">16</span>
           
           <code class="ruby">  let(:valid_session) { {} }</code>
         </li>
@@ -3046,14 +3046,14 @@
           <code class="ruby">      evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
-          
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :index, {}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
-          
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(assigns(:eventos)).to eq([evento])</code>
         </li>
@@ -3094,14 +3094,14 @@
           <code class="ruby">      evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
-          
+        <li class="covered" data-hits="1" data-linenumber="50">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :show, {:id =&gt; evento.to_param}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="51">
-          
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(assigns(:evento)).to eq(evento)</code>
         </li>
@@ -3184,14 +3184,14 @@
           <code class="ruby">      evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="65">
-          
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
           
           <code class="ruby">      get :edit, {:id =&gt; evento.to_param}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="66">
-          
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(assigns(:evento)).to eq(evento)</code>
         </li>
@@ -3274,14 +3274,14 @@
           <code class="ruby">        post :create, {:evento =&gt; valid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="80">
-          
+        <li class="covered" data-hits="1" data-linenumber="80">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(assigns(:evento)).to be_a(Evento)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="81">
-          
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(assigns(:evento)).to be_persisted</code>
         </li>
@@ -3310,8 +3310,8 @@
           <code class="ruby">        post :create, {:evento =&gt; valid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="86">
-          
+        <li class="covered" data-hits="1" data-linenumber="86">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(response).to redirect_to(Evento.last)</code>
         </li>
@@ -3352,8 +3352,8 @@
           <code class="ruby">        post :create, {:evento =&gt; invalid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="93">
-          
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(assigns(:evento)).to be_a_new(Evento)</code>
         </li>
@@ -3382,8 +3382,8 @@
           <code class="ruby">        post :create, {:evento =&gt; invalid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="98">
-          
+        <li class="covered" data-hits="1" data-linenumber="98">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(response).to render_template(&quot;new&quot;)</code>
         </li>
@@ -3430,8 +3430,8 @@
           <code class="ruby">      let(:new_attributes) {</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="106">
-          
+        <li class="covered" data-hits="1" data-linenumber="106">
+          <span class="hits">1</span>
           
           <code class="ruby">        skip(&quot;Add a hash of attributes valid for your model&quot;)</code>
         </li>
@@ -3460,8 +3460,8 @@
           <code class="ruby">        evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="111">
-          
+        <li class="covered" data-hits="1" data-linenumber="111">
+          <span class="hits">1</span>
           
           <code class="ruby">        put :update, {:id =&gt; evento.to_param, :evento =&gt; new_attributes}, valid_session</code>
         </li>
@@ -3502,14 +3502,14 @@
           <code class="ruby">        evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="118">
-          
+        <li class="covered" data-hits="1" data-linenumber="118">
+          <span class="hits">1</span>
           
           <code class="ruby">        put :update, {:id =&gt; evento.to_param, :evento =&gt; valid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="119">
-          
+        <li class="covered" data-hits="1" data-linenumber="119">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(assigns(:evento)).to eq(evento)</code>
         </li>
@@ -3538,14 +3538,14 @@
           <code class="ruby">        evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="124">
-          
+        <li class="covered" data-hits="1" data-linenumber="124">
+          <span class="hits">1</span>
           
           <code class="ruby">        put :update, {:id =&gt; evento.to_param, :evento =&gt; valid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="125">
-          
+        <li class="covered" data-hits="1" data-linenumber="125">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(response).to redirect_to(evento)</code>
         </li>
@@ -3586,14 +3586,14 @@
           <code class="ruby">        evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="132">
-          
+        <li class="covered" data-hits="1" data-linenumber="132">
+          <span class="hits">1</span>
           
           <code class="ruby">        put :update, {:id =&gt; evento.to_param, :evento =&gt; invalid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="133">
-          
+        <li class="covered" data-hits="1" data-linenumber="133">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(assigns(:evento)).to eq(evento)</code>
         </li>
@@ -3622,14 +3622,14 @@
           <code class="ruby">        evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="138">
-          
+        <li class="covered" data-hits="1" data-linenumber="138">
+          <span class="hits">1</span>
           
           <code class="ruby">        put :update, {:id =&gt; evento.to_param, :evento =&gt; invalid_attributes}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="139">
-          
+        <li class="covered" data-hits="1" data-linenumber="139">
+          <span class="hits">1</span>
           
           <code class="ruby">        expect(response).to render_template(&quot;edit&quot;)</code>
         </li>
@@ -3676,14 +3676,14 @@
           <code class="ruby">      evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="147">
-          
+        <li class="covered" data-hits="1" data-linenumber="147">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect {</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="148">
-          
+        <li class="covered" data-hits="1" data-linenumber="148">
+          <span class="hits">1</span>
           
           <code class="ruby">        delete :destroy, {:id =&gt; evento.to_param}, valid_session</code>
         </li>
@@ -3718,14 +3718,14 @@
           <code class="ruby">      evento = Evento.create! valid_attributes</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="154">
-          
+        <li class="covered" data-hits="1" data-linenumber="154">
+          <span class="hits">1</span>
           
           <code class="ruby">      delete :destroy, {:id =&gt; evento.to_param}, valid_session</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="155">
-          
+        <li class="covered" data-hits="1" data-linenumber="155">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to redirect_to(eventos_url)</code>
         </li>
@@ -5149,9 +5149,9 @@
     <h3>spec/views/eventos/show.html.erb_spec.rb</h3>
     <h4><span class="red">75.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>4</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -5182,8 +5182,8 @@
           <code class="ruby">  before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
           
           <code class="ruby">    @evento = assign(:evento, Evento.create!(</code>
         </li>
@@ -5218,37 +5218,7 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  it &quot;renders attributes in &lt;p&gt;&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    render</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="13">
-          
-          
-          <code class="ruby">    expect(rendered).to match(/Nome/)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="14">
-          
-          
-          <code class="ruby">    expect(rendered).to match(/Twitter/)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
