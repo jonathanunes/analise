@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/controllers/eventos_controller_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/controllers/eventos_controller_spec.rb": [
         1,
         null,
         null,
@@ -162,7 +162,7 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/rails_helper.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -214,14 +214,14 @@
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/environment.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/application.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/application.rb": [
         1,
         null,
         1,
@@ -249,12 +249,12 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/boot.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/environments/test.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/environments/test.rb": [
         1,
         null,
         null,
@@ -298,7 +298,7 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/assets.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -311,7 +311,7 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/backtrace_silencers.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -320,18 +320,18 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/cookies_serializer.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/filter_parameter_logging.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/inflections.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -349,18 +349,18 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/mime_types.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/session_store.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/initializers/wrap_parameters.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -376,7 +376,7 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/factories/eventos.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/factories/eventos.rb": [
         1,
         1,
         1,
@@ -385,7 +385,7 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/factories/medidas.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/factories/medidas.rb": [
         1,
         1,
         1,
@@ -394,7 +394,7 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/config/routes.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/config/routes.rb": [
         1,
         1,
         1,
@@ -455,15 +455,15 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/app/helpers/application_helper.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/app/helpers/eventos_helper.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/app/helpers/eventos_helper.rb": [
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/app/controllers/eventos_controller.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/app/controllers/eventos_controller.rb": [
         1,
         1,
         null,
@@ -556,14 +556,14 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/app/controllers/application_controller.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/helpers/eventos_helper_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/helpers/eventos_helper_spec.rb": [
         1,
         null,
         null,
@@ -580,26 +580,26 @@
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/models/evento_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/models/evento_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/app/models/evento.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/app/models/evento.rb": [
         1,
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/models/medida_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/models/medida_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/app/models/medida.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/app/models/medida.rb": [
         1,
         null,
         1,
@@ -645,103 +645,56 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/requests/eventos_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/requests/eventos_spec.rb": [
         1,
         null,
         1,
         1,
         1,
         1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/routing/eventos_routing_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/views/eventos/edit.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
         1,
         null,
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/views/eventos/index.html.erb_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/routing/eventos_routing_spec.rb": [
         1,
         null,
         1,
         1,
+        null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
         null,
         null,
         1,
         1,
+        null,
+        null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/views/eventos/new.html.erb_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/views/eventos/edit.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -764,7 +717,54 @@
         null,
         null
       ],
-      "/Users/isouza/Documents/Desenvolvimento/Rails/analise/spec/views/eventos/show.html.erb_spec.rb": [
+      "/Users/igorsouza/Documents/Rails/analise/spec/views/eventos/index.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/igorsouza/Documents/Rails/analise/spec/views/eventos/new.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/igorsouza/Documents/Rails/analise/spec/views/eventos/show.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -778,6 +778,6 @@
         null
       ]
     },
-    "timestamp": 1433498976
+    "timestamp": 1433508151
   }
 }
