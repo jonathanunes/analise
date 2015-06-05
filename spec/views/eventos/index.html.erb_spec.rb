@@ -14,9 +14,4 @@ RSpec.describe "eventos/index", type: :view do
     ])
   end
 
-  it "renders a list of eventos" do
-    render
-    assert_select "tr>td", :text => "Nome".to_s, :count => 2
-    assert_select "tr>td", :text => "Twitter".to_s, :count => 2
-  end
 end
