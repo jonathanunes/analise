@@ -4,4 +4,17 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-test: &default
+
+development:
+  <<: *default
+  database: tea_development
+
+test:
+  <<: *default
+  database: tea_test
+
+production:
+  <<: *default
+  database: tea_production
+  username: tea
+  password: <%= ENV['TEA_DATABASE_PASSWORD'] %>
