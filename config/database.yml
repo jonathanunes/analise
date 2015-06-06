@@ -7,14 +7,14 @@ default: &default
 
 development:
   <<: *default
-  database: tea_development
+  database: analise_development
 
 test:
   <<: *default
-  database: tea_test
+  database: analise_test
 
 production:
   <<: *default
-  database: tea_production
-  username: tea
+  database: analise_production
+  username: root
   password: <%= ENV['TEA_DATABASE_PASSWORD'] %>
