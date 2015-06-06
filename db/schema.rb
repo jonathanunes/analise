@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150605144906) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "eventos", force: :cascade do |t|
     t.string   "nome"
     t.string   "twitter"
@@ -32,6 +35,7 @@ ActiveRecord::Schema.define(version: 20150605144906) do
     t.float    "ftalk"
   end
 
-  add_index "medidas", ["evento_id"], name: "index_medidas_on_evento_id"
+  add_index "medidas", ["evento_id"], name: "index_medidas_on_evento_id", using: :btree
 
+  add_foreign_key "medidas", "eventos"
 end
