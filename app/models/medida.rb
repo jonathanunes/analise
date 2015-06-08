@@ -28,7 +28,7 @@ class Medida < ActiveRecord::Base
   def getAlexa(url)
     begin
     source = open("http://www.alexa.com/siteinfo/#{url}").read
-    self.alexa = source.split('metrics-data align-vmiddle')[1].split('>')[2].split('<')[0].gsub!(',','.').gsub!("\n",'').gsub!(' ','')
+    self.alexa = source.split('metrics-data align-vmiddle')[1].split('>')[2].split('<')[0].gsub!(',','.').gsub!("\n",'').gsub!(' ','').delete('.')
     rescue => ex
       logger.error ex.message
     end
