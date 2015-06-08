@@ -19,7 +19,7 @@ class Medida < ActiveRecord::Base
       source = open("https://twitter.com/#{twitter}").read
       a = source.split('<a class="ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor" title="')
       a = source.split('class="ProfileNav-item ProfileNav-item--followers"')
-      self.twitter = a[1].split('title')[1].split(' ')[0].gsub!('=','').gsub!('"','').delete('.').to_i
+      self.twitter = a[1].split('title')[1].split(' ')[0].gsub!('=','').gsub!('"','').delete('.')
     rescue => ex
       logger.error ex.message
     end
