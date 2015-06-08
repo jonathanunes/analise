@@ -47,7 +47,7 @@ end
       if @evento.save
         format.html { redirect_to @evento, notice: 'Evento was successfully created.' }
         format.json { render :show, status: :created, location: @evento }
-        redirect_to :action => "atualizar"
+        # redirect_to :action => "atualizar"
       else
         format.html { render :new }
         format.json { render json: @evento.errors, status: :unprocessable_entity }
