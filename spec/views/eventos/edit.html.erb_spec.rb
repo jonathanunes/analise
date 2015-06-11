@@ -2,10 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "eventos/edit", type: :view do
   before(:each) do
-    @evento = assign(:evento, Evento.create!(
-      :nome => "MyString",
-      :twitter => "MyString"
-    ))
+    @evento = FactoryGirl.create(:evento)
   end
 
   it "renders the edit evento form" do
