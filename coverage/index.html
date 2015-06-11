@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-08T14:47:34-03:00">2015-06-08T14:47:34-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-11T11:07:20-03:00">2015-06-11T11:07:20-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">87.67%</span></span>
+    (<span class="covered_percent"><span class="yellow">87.38%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.21
+         1.4
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>37</b> files in total.
-    <b>292</b> relevant lines. 
-    <span class="green"><b>256</b> lines covered</span> and
-    <span class="red"><b>36</b> lines missed </span>
+    <b>317</b> relevant lines. 
+    <span class="green"><b>277</b> lines covered</span> and
+    <span class="red"><b>40</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -113,11 +113,11 @@
       <tr>
         <td class="strong"><a href="#afbb93881f05fe7a11d0e57ed09fc329edcd44a7" class="src_link" title="app/models/evento.rb">app/models/evento.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>3</td>
-        <td>2</td>
-        <td>2</td>
+        <td>22</td>
+        <td>12</td>
+        <td>12</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>6.8</td>
       </tr>
       
       <tr>
@@ -283,9 +283,9 @@
       <tr>
         <td class="strong"><a href="#c80f3be51cabec6b5a365240cacbb05f30533a09" class="src_link" title="spec/factories/eventos.rb">spec/factories/eventos.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>4</td>
-        <td>4</td>
+        <td>8</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -323,9 +323,9 @@
       <tr>
         <td class="strong"><a href="#b6c55974f5f48352c98b30385b16b2603089fb27" class="src_link" title="spec/models/evento_spec.rb">spec/models/evento_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>5</td>
-        <td>3</td>
-        <td>3</td>
+        <td>30</td>
+        <td>17</td>
+        <td>17</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -372,12 +372,12 @@
       
       <tr>
         <td class="strong"><a href="#f8a62b791e22b01edf3bf83dab12784dae6fedba" class="src_link" title="spec/views/eventos/edit.html.erb_spec.rb">spec/views/eventos/edit.html.erb_spec.rb</a></td>
-        <td class="green strong">100.0 %</td>
+        <td class="red strong">55.56 %</td>
         <td>21</td>
         <td>9</td>
-        <td>9</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td>5</td>
+        <td>4</td>
+        <td>0.6</td>
       </tr>
       
       <tr>
@@ -1221,8 +1221,8 @@
     <h3>app/models/evento.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>2</b> relevant lines. 
-      <span class="green"><b>2</b> lines covered</span> and
+      <b>12</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1242,7 +1242,121 @@
           <code class="ruby">  validates :nome, presence: true</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before_save :validar</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def validar</code>
+        </li>
+      
+        <li class="covered" data-hits="19" data-linenumber="7">
+          <span class="hits">19</span>
+          
+          <code class="ruby">  	self.validarFacebook</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="8">
+          <span class="hits">18</span>
+          
+          <code class="ruby">    self.validarTwitter</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def validarFacebook</code>
+        </li>
+      
+        <li class="covered" data-hits="19" data-linenumber="12">
+          <span class="hits">19</span>
+          
+          <code class="ruby">  	if self.facebook.include?(&quot;.com/&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  		self.facebook = self.facebook.split(&quot;.com/&quot;)[1]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def validarTwitter</code>
+        </li>
+      
+        <li class="covered" data-hits="18" data-linenumber="18">
+          <span class="hits">18</span>
+          
+          <code class="ruby">    if (self.twitter.include?(&quot;http&quot;) || self.twitter.include?(&quot;.com/&quot;))</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      self.twitter = self.twitter.split(&quot;.com/&quot;)[1]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">end</code>
@@ -1395,7 +1509,7 @@
         <li class="missed" data-hits="0" data-linenumber="22">
           
           
-          <code class="ruby">      self.twitter = a[1].split(&#39;title&#39;)[1].split(&#39; &#39;)[0].gsub!(&#39;=&#39;,&#39;&#39;).gsub!(&#39;&quot;&#39;,&#39;&#39;).delete(&#39;.&#39;).to_i</code>
+          <code class="ruby">      self.twitter = a[1].split(&#39;title&#39;)[1].split(&#39; &#39;)[0].gsub!(&#39;=&#39;,&#39;&#39;).gsub!(&#39;&quot;&#39;,&#39;&#39;).delete(&#39;.&#39;)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="23">
@@ -1449,7 +1563,7 @@
         <li class="missed" data-hits="0" data-linenumber="31">
           
           
-          <code class="ruby">    self.alexa = source.split(&#39;metrics-data align-vmiddle&#39;)[1].split(&#39;&gt;&#39;)[2].split(&#39;&lt;&#39;)[0].gsub!(&#39;,&#39;,&#39;.&#39;).gsub!(&quot;\n&quot;,&#39;&#39;).gsub!(&#39; &#39;,&#39;&#39;)</code>
+          <code class="ruby">    self.alexa = source.split(&#39;metrics-data align-vmiddle&#39;)[1].split(&#39;&gt;&#39;)[2].split(&#39;&lt;&#39;)[0].gsub!(&#39;,&#39;,&#39;.&#39;).gsub!(&quot;\n&quot;,&#39;&#39;).gsub!(&#39; &#39;,&#39;&#39;).delete(&#39;.&#39;)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="32">
@@ -4095,8 +4209,8 @@
     <h3>spec/factories/eventos.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4119,28 +4233,34 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">    nome &quot;MyString&quot;</code>
+          <code class="ruby">    nome &quot;Brasil Game Show&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">twitter &quot;MyString&quot;</code>
+          <code class="ruby">	twitter &quot;brasilgameshow&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">	facebook &quot;BrasilGameShow&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">end</code>
@@ -4431,8 +4551,8 @@
     <h3>spec/models/evento_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4458,13 +4578,163 @@
           <code class="ruby">RSpec.describe Evento, type: :model do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="4">
           
-          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	describe &quot;O evento deve possuir&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    	it &#39;um nome&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    		evento = FactoryGirl.build(:evento, :nome =&gt; nil)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    		expect(evento).to_not be_valid</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    	describe &quot;um nome de facebook&quot; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    		it &#39;sem http&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    			evento = FactoryGirl.create(:evento, :facebook =&gt; &quot;http://facebook.com/BrasilGameShow&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    			expect(evento.facebook).to be_eql(&quot;BrasilGameShow&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">    		end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    		it &#39;sem http&#39; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    			evento = FactoryGirl.create(:evento, :facebook =&gt; &quot;BrasilGameShow&quot;)	</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    			expect(evento.facebook).to be_eql(&quot;BrasilGameShow&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">    		end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">    	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    	describe &quot;um nome de twitter&quot; do </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    		it &#39;sem url do twitter&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    			evento = FactoryGirl.create(:evento, :twitter =&gt; &quot;https://twitter.com/brasilgameshow&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    			expect(evento.twitter).to be_eql(&quot;brasilgameshow&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">    		end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">    	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>
@@ -5149,11 +5419,11 @@
         <div class="source_table" id="f8a62b791e22b01edf3bf83dab12784dae6fedba">
   <div class="header">
     <h3>spec/views/eventos/edit.html.erb_spec.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">55.56 %</span> covered</h4>
     <div>
       <b>9</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -5226,8 +5496,8 @@
           <code class="ruby">  it &quot;renders the edit evento form&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
           
           <code class="ruby">    render</code>
         </li>
@@ -5238,8 +5508,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
           
           <code class="ruby">    assert_select &quot;form[action=?][method=?]&quot;, evento_path(@evento), &quot;post&quot; do</code>
         </li>
@@ -5250,8 +5520,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="16">
+          
           
           <code class="ruby">      assert_select &quot;input#evento_nome[name=?]&quot;, &quot;evento[nome]&quot;</code>
         </li>
@@ -5262,8 +5532,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="18">
+          
           
           <code class="ruby">      assert_select &quot;input#evento_twitter[name=?]&quot;, &quot;evento[twitter]&quot;</code>
         </li>

@@ -1,7 +1,8 @@
 FactoryGirl.define do
   factory :evento do
-    nome "MyString"
-twitter "MyString"
+    nome "Brasil Game Show"
+	twitter "brasilgameshow"
+	facebook "BrasilGameShow"
   end
 
 end
