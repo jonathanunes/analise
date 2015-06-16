@@ -87,6 +87,6 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def evento_params
-      params.require(:evento).permit(:nome, :twitter, :alexa, :facebook)
+      params.require(:evento).permit(:nome, :twitter, :alexa, :facebook, :instagram)
     end
 end
