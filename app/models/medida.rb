@@ -8,11 +8,22 @@ class Medida < ActiveRecord::Base
     getTwitter(evento.twitter)
     getAlexa(evento.alexa)
     getFacebook(evento.facebook)
+    getInstagram(evento.instagram)
   end
 
 
 
   private
+
+  def getInstagram(instagram)
+      begin
+        source = open("https://instagram.com/#{instagram}").read
+        a = source.split('count')
+        self.instagram = a[2].delete('"').delete(':').delete('}').delete(',').to_i || 0
+      rescue => ex
+        logger.error ex.message
+      end
+  end
 
   def getTwitter(twitter)
     begin
