@@ -6,17 +6,25 @@ class Evento < ActiveRecord::Base
   def validar
   	self.validarFacebook
     self.validarTwitter
+    self.validarInstagram
   end
 
   def validarFacebook
-  	if self.facebook.include?(".com/")
+  	if (self.facebook && self.facebook.include?(".com/"))
   		self.facebook = self.facebook.split(".com/")[1]
   	end
   end
 
   def validarTwitter
-    if (self.twitter.include?("http") || self.twitter.include?(".com/"))
+    if (self.twitter && self.twitter.include?(".com/"))
       self.twitter = self.twitter.split(".com/")[1]
     end
   end
+
+  def validarInstagram
+    if self.instagram && self.instagram.include?(".com/")
+      self.instagram = self.instagram.split(".com/")[1]
+    end
+  end
+
 end

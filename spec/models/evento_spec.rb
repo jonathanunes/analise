@@ -25,6 +25,13 @@ RSpec.describe Evento, type: :model do
     			expect(evento.twitter).to be_eql("brasilgameshow")
     		end
     	end
+
+        describe "um nome de instagram" do
+            it 'sem url do instagram' do 
+                evento = FactoryGirl.create(:evento, :instagram => "https://instagram.com/brasilgameshow")
+                expect(evento.instagram).to be_eql("brasilgameshow") 
+            end
+        end
   	end
 
 end
