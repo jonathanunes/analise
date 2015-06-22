@@ -42,17 +42,8 @@ end
   # POST /eventos.json
   def create
     @evento = Evento.new(evento_params)
-
-    respond_to do |format|
-      if @evento.save
-        format.html { redirect_to @evento, notice: 'Evento was successfully created.' }
-        format.json { render :show, status: :created, location: @evento }
-        # redirect_to :action => "atualizar"
-      else
-        format.html { render :new }
-        format.json { render json: @evento.errors, status: :unprocessable_entity }
-      end
-    end
+    @evento.save 
+    redirect_to :action => "atualizar"
   end
 
   # PATCH/PUT /eventos/1

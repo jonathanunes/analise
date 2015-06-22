@@ -16,12 +16,16 @@ class Medida < ActiveRecord::Base
   private
 
   def getInstagram(instagram)
-      begin
-        source = open("https://instagram.com/#{instagram}").read
-        a = source.split('count')
-        self.instagram = a[2].delete('"').delete(':').delete('}').delete(',').to_i || 0
-      rescue => ex
-        logger.error ex.message
+      if instagram
+        begin
+          source = open("https://instagram.com/#{instagram}").read
+          a = source.split('count')
+          self.instagram = a[2].delete('"').delete(':').delete('}').delete(',').to_i || 0
+        rescue => ex
+          logger.error ex.message
+        end
+      else
+        self.instagram = 0
       end
   end
 
