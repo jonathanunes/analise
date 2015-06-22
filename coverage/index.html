@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-18T13:49:08-03:00">2015-06-18T13:49:08-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-06-22T14:49:06-03:00">2015-06-22T14:49:06-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">87.13%</span></span>
+    (<span class="covered_percent"><span class="yellow">86.45%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.51
+         1.45
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>37</b> files in total.
-    <b>334</b> relevant lines. 
-    <span class="green"><b>291</b> lines covered</span> and
-    <span class="red"><b>43</b> lines missed </span>
+    <b>332</b> relevant lines. 
+    <span class="green"><b>287</b> lines covered</span> and
+    <span class="red"><b>45</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#35d50357c6a6c6231f25c138a68bfdcb426f6b6a" class="src_link" title="app/controllers/eventos_controller.rb">app/controllers/eventos_controller.rb</a></td>
-        <td class="yellow strong">86.36 %</td>
-        <td>92</td>
-        <td>44</td>
-        <td>38</td>
+        <td class="yellow strong">85.0 %</td>
+        <td>83</td>
+        <td>40</td>
+        <td>34</td>
         <td>6</td>
-        <td>2.3</td>
+        <td>2.1</td>
       </tr>
       
       <tr>
@@ -122,12 +122,12 @@
       
       <tr>
         <td class="strong"><a href="#45306c5528ab997fbba384c96b46edec377c57f4" class="src_link" title="app/models/medida.rb">app/models/medida.rb</a></td>
-        <td class="red strong">25.58 %</td>
-        <td>66</td>
-        <td>43</td>
+        <td class="red strong">24.44 %</td>
+        <td>70</td>
+        <td>45</td>
         <td>11</td>
-        <td>32</td>
-        <td>0.3</td>
+        <td>34</td>
+        <td>0.2</td>
       </tr>
       
       <tr>
@@ -487,10 +487,10 @@
         <div class="source_table" id="35d50357c6a6c6231f25c138a68bfdcb426f6b6a">
   <div class="header">
     <h3>app/controllers/eventos_controller.rb</h3>
-    <h4><span class="yellow">86.36 %</span> covered</h4>
+    <h4><span class="yellow">85.0 %</span> covered</h4>
     <div>
-      <b>44</b> relevant lines. 
-      <span class="green"><b>38</b> lines covered</span> and
+      <b>40</b> relevant lines. 
+      <span class="green"><b>34</b> lines covered</span> and
       <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
@@ -762,289 +762,235 @@
           <code class="ruby">    @evento = Evento.new(evento_params)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="covered" data-hits="5" data-linenumber="45">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    @evento.save </code>
         </li>
       
         <li class="covered" data-hits="5" data-linenumber="46">
           <span class="hits">5</span>
           
-          <code class="ruby">    respond_to do |format|</code>
+          <code class="ruby">    redirect_to :action =&gt; &quot;atualizar&quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="47">
-          <span class="hits">5</span>
-          
-          <code class="ruby">      if @evento.save</code>
-        </li>
-      
-        <li class="covered" data-hits="6" data-linenumber="48">
-          <span class="hits">6</span>
-          
-          <code class="ruby">        format.html { redirect_to @evento, notice: &#39;Evento was successfully created.&#39; }</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="49">
-          <span class="hits">3</span>
-          
-          <code class="ruby">        format.json { render :show, status: :created, location: @evento }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="50">
-          
-          
-          <code class="ruby">        # redirect_to :action =&gt; &quot;atualizar&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="51">
-          
-          
-          <code class="ruby">      else</code>
-        </li>
-      
-        <li class="covered" data-hits="4" data-linenumber="52">
-          <span class="hits">4</span>
-          
-          <code class="ruby">        format.html { render :new }</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="53">
-          <span class="hits">2</span>
-          
-          <code class="ruby">        format.json { render json: @evento.errors, status: :unprocessable_entity }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="never" data-hits="" data-linenumber="47">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">  # PATCH/PUT /eventos/1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
           <code class="ruby">  # PATCH/PUT /eventos/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
           <code class="ruby">  def update</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="61">
+        <li class="covered" data-hits="4" data-linenumber="52">
           <span class="hits">4</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="62">
+        <li class="covered" data-hits="4" data-linenumber="53">
           <span class="hits">4</span>
           
           <code class="ruby">      if @evento.update(evento_params)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="63">
+        <li class="covered" data-hits="4" data-linenumber="54">
           <span class="hits">4</span>
           
           <code class="ruby">        format.html { redirect_to @evento, notice: &#39;Evento was successfully updated.&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="64">
+        <li class="covered" data-hits="2" data-linenumber="55">
           <span class="hits">2</span>
           
           <code class="ruby">        format.json { render :show, status: :ok, location: @evento }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">      else</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="66">
+        <li class="covered" data-hits="4" data-linenumber="57">
           <span class="hits">4</span>
           
           <code class="ruby">        format.html { render :edit }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="67">
+        <li class="covered" data-hits="2" data-linenumber="58">
           <span class="hits">2</span>
           
           <code class="ruby">        format.json { render json: @evento.errors, status: :unprocessable_entity }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="69">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="62">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">  # DELETE /eventos/1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">  # DELETE /eventos/1.json</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="74">
+        <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="75">
+        <li class="covered" data-hits="2" data-linenumber="66">
           <span class="hits">2</span>
           
           <code class="ruby">    @evento.destroy</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="76">
+        <li class="covered" data-hits="2" data-linenumber="67">
           <span class="hits">2</span>
           
           <code class="ruby">    respond_to do |format|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="77">
+        <li class="covered" data-hits="4" data-linenumber="68">
           <span class="hits">4</span>
           
           <code class="ruby">      format.html { redirect_to eventos_url, notice: &#39;Evento was successfully destroyed.&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="78">
+        <li class="covered" data-hits="2" data-linenumber="69">
           <span class="hits">2</span>
           
           <code class="ruby">      format.json { head :no_content }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="79">
+        <li class="never" data-hits="" data-linenumber="70">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="80">
+        <li class="never" data-hits="" data-linenumber="71">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="81">
+        <li class="never" data-hits="" data-linenumber="72">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="82">
+        <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="83">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">    # Use callbacks to share common setup or constraints between actions.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="84">
+        <li class="covered" data-hits="1" data-linenumber="75">
           <span class="hits">1</span>
           
           <code class="ruby">    def set_evento</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="85">
+        <li class="covered" data-hits="8" data-linenumber="76">
           <span class="hits">8</span>
           
           <code class="ruby">      @evento = Evento.find(params[:id])</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="86">
+        <li class="never" data-hits="" data-linenumber="77">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="87">
+        <li class="never" data-hits="" data-linenumber="78">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="88">
+        <li class="never" data-hits="" data-linenumber="79">
           
           
           <code class="ruby">    # Never trust parameters from the scary internet, only allow the white list through.</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
+        <li class="covered" data-hits="1" data-linenumber="80">
           <span class="hits">1</span>
           
           <code class="ruby">    def evento_params</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="90">
+        <li class="covered" data-hits="9" data-linenumber="81">
           <span class="hits">9</span>
           
           <code class="ruby">      params.require(:evento).permit(:nome, :twitter, :alexa, :facebook, :instagram)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="91">
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="92">
+        <li class="never" data-hits="" data-linenumber="83">
           
           
           <code class="ruby">end</code>
@@ -1417,11 +1363,11 @@
         <div class="source_table" id="45306c5528ab997fbba384c96b46edec377c57f4">
   <div class="header">
     <h3>app/models/medida.rb</h3>
-    <h4><span class="red">25.58 %</span> covered</h4>
+    <h4><span class="red">24.44 %</span> covered</h4>
     <div>
-      <b>43</b> relevant lines. 
+      <b>45</b> relevant lines. 
       <span class="green"><b>11</b> lines covered</span> and
-      <span class="red"><b>32</b> lines missed.</span>
+      <span class="red"><b>34</b> lines missed.</span>
     </div>
   </div>
   
@@ -1539,253 +1485,253 @@
         <li class="missed" data-hits="0" data-linenumber="19">
           
           
-          <code class="ruby">      begin</code>
+          <code class="ruby">      if instagram</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="20">
           
           
-          <code class="ruby">        source = open(&quot;https://instagram.com/#{instagram}&quot;).read</code>
+          <code class="ruby">        begin</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="21">
           
           
-          <code class="ruby">        a = source.split(&#39;count&#39;)</code>
+          <code class="ruby">          source = open(&quot;https://instagram.com/#{instagram}&quot;).read</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="22">
           
           
-          <code class="ruby">        self.instagram = a[2].delete(&#39;&quot;&#39;).delete(&#39;:&#39;).delete(&#39;}&#39;).delete(&#39;,&#39;).to_i || 0</code>
+          <code class="ruby">          a = source.split(&#39;count&#39;)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="23">
           
           
-          <code class="ruby">      rescue =&gt; ex</code>
+          <code class="ruby">          self.instagram = a[2].delete(&#39;&quot;&#39;).delete(&#39;:&#39;).delete(&#39;}&#39;).delete(&#39;,&#39;).to_i || 0</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="24">
           
           
-          <code class="ruby">        logger.error ex.message</code>
+          <code class="ruby">        rescue =&gt; ex</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="missed" data-hits="0" data-linenumber="25">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">          logger.error ex.message</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">        end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
+          <code class="ruby">      else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">        self.instagram = 0</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">  def getTwitter(twitter)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="29">
-          
-          
-          <code class="ruby">    begin</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
-          
-          <code class="ruby">      source = open(&quot;https://twitter.com/#{twitter}&quot;).read</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="31">
-          
-          
-          <code class="ruby">      a = source.split(&#39;&lt;a class=&quot;ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor&quot; title=&quot;&#39;)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="32">
-          
-          
-          <code class="ruby">      a = source.split(&#39;class=&quot;ProfileNav-item ProfileNav-item--followers&quot;&#39;)</code>
-        </li>
-      
         <li class="missed" data-hits="0" data-linenumber="33">
           
           
-          <code class="ruby">      self.twitter = a[1].split(&#39;title&#39;)[1].split(&#39; &#39;)[0].gsub!(&#39;=&#39;,&#39;&#39;).gsub!(&#39;&quot;&#39;,&#39;&#39;).delete(&#39;.&#39;)</code>
+          <code class="ruby">    begin</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="34">
           
           
-          <code class="ruby">    rescue =&gt; ex</code>
+          <code class="ruby">      source = open(&quot;https://twitter.com/#{twitter}&quot;).read</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="35">
           
           
+          <code class="ruby">      a = source.split(&#39;&lt;a class=&quot;ProfileNav-stat ProfileNav-stat--link u-borderUserColor u-textCenter js-tooltip js-nav u-textUserColor&quot; title=&quot;&#39;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">      a = source.split(&#39;class=&quot;ProfileNav-item ProfileNav-item--followers&quot;&#39;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">      self.twitter = a[1].split(&#39;title&#39;)[1].split(&#39; &#39;)[0].gsub!(&#39;=&#39;,&#39;&#39;).gsub!(&#39;&quot;&#39;,&#39;&#39;).delete(&#39;.&#39;)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">    rescue =&gt; ex</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
           <code class="ruby">      logger.error ex.message</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="38">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
           <code class="ruby">  def getAlexa(url)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
+        <li class="missed" data-hits="0" data-linenumber="44">
           
           
           <code class="ruby">    begin</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="41">
+        <li class="missed" data-hits="0" data-linenumber="45">
           
           
           <code class="ruby">    source = open(&quot;http://www.alexa.com/siteinfo/#{url}&quot;).read</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="42">
+        <li class="missed" data-hits="0" data-linenumber="46">
           
           
           <code class="ruby">    self.alexa = source.split(&#39;metrics-data align-vmiddle&#39;)[1].split(&#39;&gt;&#39;)[2].split(&#39;&lt;&#39;)[0].gsub!(&#39;,&#39;,&#39;.&#39;).gsub!(&quot;\n&quot;,&#39;&#39;).gsub!(&#39; &#39;,&#39;&#39;).delete(&#39;.&#39;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="43">
+        <li class="missed" data-hits="0" data-linenumber="47">
           
           
           <code class="ruby">    rescue =&gt; ex</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
+        <li class="missed" data-hits="0" data-linenumber="48">
           
           
           <code class="ruby">      logger.error ex.message</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="46">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="47">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
           <code class="ruby">  def getFacebook(facebook)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
+        <li class="missed" data-hits="0" data-linenumber="53">
           
           
           <code class="ruby">    begin</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
-          
-          
-          <code class="ruby">      source = open(&quot;https://graph.facebook.com/#{facebook}/&quot;).read</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="51">
-          
-          
-          <code class="ruby">      code = JSON.parse(source)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
-          
-          <code class="ruby">      getFacebookLikes(code)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="53">
-          
-          
-          <code class="ruby">      getFacebookTalk(code)</code>
-        </li>
-      
         <li class="missed" data-hits="0" data-linenumber="54">
           
           
-          <code class="ruby">    rescue =&gt; ex</code>
+          <code class="ruby">      @graph = Koala::Facebook::API.new(&quot;CAACEdEose0cBABFrhZAqtpyXJBqoGkwoY9EbSVWPR7fCiXcH69RZBwHGCdRPnuLscogN2GMaWpaE8EvdK2CZBEO9ug0AESQ0RnbbDZAX5WDZBCXH1NfM3g1C15evLQ0mCXOZAOmlvzv6kRm3Bcg7CVew6ncR1ZCAxbZBkchVzdFmkKHG2rqWOQfjveUHnqqEzG6TPpp0KHhDY2AUjtHAzlpnccpgdbDQVv8ZD&quot;)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="55">
           
           
+          <code class="ruby">      code = @graph.get_object(facebook)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="56">
+          
+          
+          <code class="ruby">      getFacebookLikes(code)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="57">
+          
+          
+          <code class="ruby">      getFacebookTalk(code)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="58">
+          
+          
+          <code class="ruby">    rescue =&gt; ex</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="59">
+          
+          
           <code class="ruby">      logger.error ex.message</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="59">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def getFacebookLikes(code)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="60">
-          
-          
-          <code class="ruby">    self.flikes = code[&#39;likes&#39;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
@@ -1803,13 +1749,13 @@
         <li class="covered" data-hits="1" data-linenumber="63">
           <span class="hits">1</span>
           
-          <code class="ruby">  def getFacebookTalk(code)</code>
+          <code class="ruby">  def getFacebookLikes(code)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="64">
           
           
-          <code class="ruby">    self.ftalk = code[&#39;talking_about_count&#39;].to_i</code>
+          <code class="ruby">    self.flikes = code[&#39;likes&#39;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
@@ -1819,6 +1765,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def getFacebookTalk(code)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="68">
+          
+          
+          <code class="ruby">    self.ftalk = code[&#39;talking_about_count&#39;].to_i</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
           
           
           <code class="ruby">end</code>
@@ -3783,7 +3753,7 @@
         <li class="covered" data-hits="1" data-linenumber="86">
           <span class="hits">1</span>
           
-          <code class="ruby">        expect(response).to redirect_to(Evento.last)</code>
+          <code class="ruby">        expect(response).to redirect_to(Medida.all)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="87">
