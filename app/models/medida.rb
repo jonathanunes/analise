@@ -47,8 +47,8 @@ class Medida < ActiveRecord::Base
 
   def getFacebook(facebook)
     begin
-      source = open("https://graph.facebook.com/#{facebook}/").read
-      code = JSON.parse(source)
+      @graph = Koala::Facebook::API.new("CAACEdEose0cBABFrhZAqtpyXJBqoGkwoY9EbSVWPR7fCiXcH69RZBwHGCdRPnuLscogN2GMaWpaE8EvdK2CZBEO9ug0AESQ0RnbbDZAX5WDZBCXH1NfM3g1C15evLQ0mCXOZAOmlvzv6kRm3Bcg7CVew6ncR1ZCAxbZBkchVzdFmkKHG2rqWOQfjveUHnqqEzG6TPpp0KHhDY2AUjtHAzlpnccpgdbDQVv8ZD")
+      code = @graph.get_object(facebook)
       getFacebookLikes(code)
       getFacebookTalk(code)
     rescue => ex
