@@ -70,9 +70,13 @@ class Medida < ActiveRecord::Base
   end
 
   def getYoutube(code)
-    @http = Curl.get("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{code}&key=#{ENV['GOOGLE_API_KEY']}")
-    @response = JSON.parse(@http.body)
-    self.youtubeSubscribers = @response["items"][0]["statistics"]["subscriberCount"].to_i
-    self.youtubeViews = @response["items"][0]["statistics"]["viewCount"].to_i
+    begin
+      @http = Curl.get("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{code}&key=#{ENV['GOOGLE_API_KEY']}")
+      @response = JSON.parse(@http.body)
+    rescue => ex
+      logger.error
+    end
+    self.youtubeSubscribers = @response["items"][0]["statistics"]["subscriberCount"].to_i || 0
+    self.youtubeViews = @response["items"][0]["statistics"]["viewCount"].to_i || 0
   end
 end
