@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150616184951) do
+ActiveRecord::Schema.define(version: 20150630141921) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,17 +24,20 @@ ActiveRecord::Schema.define(version: 20150616184951) do
     t.string   "alexa"
     t.string   "facebook"
     t.string   "instagram"
+    t.string   "youtubeId"
   end
 
   create_table "medidas", force: :cascade do |t|
     t.integer  "evento_id"
     t.float    "twitter"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "alexa"
     t.float    "flikes"
     t.float    "ftalk"
     t.integer  "instagram"
+    t.integer  "youtubeSubscribers"
+    t.integer  "youtubeViews"
   end
 
   add_index "medidas", ["evento_id"], name: "index_medidas_on_evento_id", using: :btree

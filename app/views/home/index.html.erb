@@ -25,11 +25,23 @@
     </div>
     <div id="twitter" style="height: 250px;"></div>
   </div>
-    <div class="col-md-3">
+  <div class="col-md-3">
     <div class="row">
       <center><h4>Instagram</h4></center>
     </div>
     <div id="instagram" style="height: 250px;"></div>
+  </div>
+  <div class="col-md-3">
+    <div class="row">
+      <center><h4>Youtube Subs.</h4></center>
+    </div>
+    <div id="youtube-subs" style="height: 250px;"></div>
+  </div>
+  <div class="col-md-3">
+    <div class="row">
+      <center><h4>Youtube Views</h4></center>
+    </div>
+    <div id="youtube-views" style="height: 250px;"></div>
   </div>
 </div>
 
@@ -42,6 +54,22 @@
         data: [
             <% @medidas.each do |medida| %>
             { label: "<%= medida.evento.nome %>", value: '<%= medida.flikes %>' },
+            <% end %>
+        ]
+    });
+    new Morris.Donut({
+        element: 'youtube-subs',
+        data: [
+            <% @medidas.each do |medida| %>
+            { label: "<%= medida.evento.nome %>", value: '<%= medida.youtubeSubscribers %>' },
+            <% end %>
+        ]
+    });
+    new Morris.Donut({
+        element: 'youtube-views',
+        data: [
+            <% @medidas.each do |medida| %>
+            { label: "<%= medida.evento.nome %>", value: '<%= medida.youtubeViews %>' },
             <% end %>
         ]
     });

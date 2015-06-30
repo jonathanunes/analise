@@ -9,6 +9,7 @@ class Medida < ActiveRecord::Base
     getAlexa(evento.alexa)
     getFacebook(evento.facebook)
     getInstagram(evento.instagram)
+    getYoutube(evento.youtubeId)
   end
 
 
@@ -51,7 +52,7 @@ class Medida < ActiveRecord::Base
 
   def getFacebook(facebook)
     begin
-      @graph = Koala::Facebook::API.new("CAACEdEose0cBABFrhZAqtpyXJBqoGkwoY9EbSVWPR7fCiXcH69RZBwHGCdRPnuLscogN2GMaWpaE8EvdK2CZBEO9ug0AESQ0RnbbDZAX5WDZBCXH1NfM3g1C15evLQ0mCXOZAOmlvzv6kRm3Bcg7CVew6ncR1ZCAxbZBkchVzdFmkKHG2rqWOQfjveUHnqqEzG6TPpp0KHhDY2AUjtHAzlpnccpgdbDQVv8ZD")
+      @graph = Koala::Facebook::API.new(ENV['FACEBOOK_ACCESS'])
       code = @graph.get_object(facebook)
       getFacebookLikes(code)
       getFacebookTalk(code)
@@ -66,5 +67,12 @@ class Medida < ActiveRecord::Base
 
   def getFacebookTalk(code)
     self.ftalk = code['talking_about_count'].to_i
+  end
+
+  def getYoutube(code)
+    @http = Curl.get("https://www.googleapis.com/youtube/v3/channels?part=statistics&id=#{code}&key=#{ENV['GOOGLE_API_KEY']}")
+    @response = JSON.parse(@http.body)
+    self.youtubeSubscribers = @response["items"][0]["statistics"]["subscriberCount"].to_i
+    self.youtubeViews = @response["items"][0]["statistics"]["viewCount"].to_i
   end
 end
