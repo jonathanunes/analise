@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 ruby '2.2.1'
 gem 'rails_12factor', group: :production
+gem 'dotenv-rails', :groups => [:development, :test]
+gem 'faraday'
 gem "gruff"
 gem "koala"
 gem "json"
