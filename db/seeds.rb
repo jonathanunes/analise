@@ -8,6 +8,6 @@
 
 
 
+#Evento.create(nome: '', twitter: '', alexa: '', facebook: '', instagram: '', youtubeId: '');
 
-
-Evento.create(nome: '', twitter: '', alexa: '', facebook: '', instagram: '', youtubeId: '');
+Evento.create(nome: 'Brasil Game Show', twitter: 'brasilgameshow', alexa: 'brasilgameshow.com.br', facebook: 'BrasilGameShow', instagram: 'brasilgameshow', youtubeId: 'BrasilGameShow');
